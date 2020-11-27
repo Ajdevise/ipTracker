@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./Styles/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+  <section class="hero">
+    <div class="search">
+      <header class="search__header">
+        <h1>IP Address Tracker</h1>
+        <form class="search__form">
+          <input id="input" class="search__input" type="text" placeholder="Search for any IP Address or domain">
+          <button id="searchBtn" class="search__button"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg></button>
+        </form>
+      </header>
+      <div class="data" id="data">
+        <div class="data__field">
+          <span class="data__info">
+            Ip address
+          </span>
+          <h2 class="data__value" id="ip">
+            192.212.174.101
+          </h2>
+        </div>
+
+        <div class="data__field">
+          <span class="data__info">
+            Location
+          </span>
+          <h2 class="data__value" id="location">
+            Brooklyn, NY 10001
+          </h2>
+        </div>
+
+        <div class="data__field">
+          <span class="data__info">
+            Timezone
+          </span>
+          <h2 class="data__value" id="timezone">
+            utc-5:00
+          </h2>
+        </div>
+
+        <div class="data__field">
+          <span class="data__info">
+            Isp
+          </span>
+          <h2 class="data__value" id="isp">
+            SpaceX Starlink
+          </h2>
+        </div>
+
+      </div>
+    </div>
+    <div class="map" id="map">
+
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+  <script src="Script/Script.js"></script>
+</body>
+</html>

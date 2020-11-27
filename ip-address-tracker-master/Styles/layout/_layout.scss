@@ -1,0 +1,8 @@
+.hero{
+    display: grid;
+    grid-template-rows: 37vh 63vh;
+
+    @media (max-width: $bp-phone){
+        grid-template-rows: 50vh 100vh;
+    }
+}
